@@ -122,6 +122,7 @@ svg:hover {
 .ProjectsContainer {
 	display: flex;
     flex-direction: row;
+	flex-wrap: wrap;
 	width: 96vw;
     margin:auto;
     padding: 1vw 1vw;
@@ -134,6 +135,7 @@ svg:hover {
 
 .AboutMe {
 	width: 20vw;
+	min-width: 300px;
     height: 40vh;
     display: flex;
 	flex: 1 1;
@@ -262,6 +264,57 @@ svg:hover {
 	top: 50%;
 }
 
+.Project3 {
+    width: 32vw;
+    height: 40vh;
+	flex: 1 1;
+	margin: 10px;
+	background: url('bar-chart.svg');
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+	position: relative;
+	z-index: 1;
+}
+
+.Project3:hover {
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.7),
+			rgba(255, 255, 255, 0.7)
+	),
+	url('bar-chart.svg');
+	background-size: cover;
+	background-position: 0% 50%;
+    left: 0%;
+	z-index: 1;
+}
+
+.Project3:hover .P3text {
+	display: inline-block;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	z-index: 2;
+}
+
+.P3text {
+	display: none;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.Project3:hover .Small {
+	display: inline-block;
+	width: 60%;
+	color: #444444;
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	left: 25%;
+	top: 50%;
+}
+
 footer {
 	display: flex;
     padding: 0% 5% 0% 2%;
@@ -278,6 +331,9 @@ footer {
 	.Project2:hover .Small {
 		display: none;
 	}
+	.Project3:hover .Small{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -286,6 +342,10 @@ footer {
 	}
 
 	.Project2:hover .Small {
+		display: none;
+	}
+
+	.Project3:hover .Small {
 		display: none;
 	}
 
@@ -305,6 +365,11 @@ footer {
 	}
 
 	.Project2 {
+		height: 20vh;
+		margin: auto;
+	}
+
+	.Project3 {
 		height: 20vh;
 		margin: auto;
 	}
