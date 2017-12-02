@@ -443,7 +443,7 @@ aside {
 	z-index: 1;
 }
 
-.Project5:hover {
+.Project6:hover {
 	background: linear-gradient(
 			rgba(255, 255, 255, 0.7),
 			rgba(255, 255, 255, 0.7)
@@ -455,7 +455,7 @@ aside {
 	z-index: 1;
 }
 
-.Project5:hover .P5text {
+.Project6:hover .P6text {
 	display: inline-block;
 	width: 100%;
 	position: absolute;
@@ -464,13 +464,13 @@ aside {
 	z-index: 2;
 }
 
-.P5text {
+.P6text {
 	display: none;
 	text-align: center;
 	font-size: 1.4em;
 }
 
-.Project5:hover .Small {
+.Project6:hover .Small {
 	display: inline-block;
 	width: 60%;
 	color: #444444;
@@ -504,6 +504,19 @@ footer {
 	.Project3:hover .Small{
 		display: none;
 	}
+
+	.Project4:hover .Small {
+		display: none;
+	}
+
+	.Project5:hover .Small {
+		display: none;
+	}
+
+	.Project6:hover .Small {
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 500px) {
