@@ -442,10 +442,10 @@ aside {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 26vw;
-    height: 32vh;
+	width: 28vw;
+    height: 34vh;
 	flex: 1 1;
-	margin: 10px;
+	margin: 20px;
 	background: url('bus.svg');
 	background-size: contain;
     background-repeat: no-repeat;
@@ -482,6 +482,58 @@ aside {
 }
 
 .Project6:hover .Small {
+	display: inline-block;
+	width: 75%;
+	margin-bottom: 25%;
+	color: #444444;
+	text-align: center;
+}
+
+.Project7 {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 34vw;
+    height: 42vh;
+	flex: 1 1;
+	margin: 20px;
+	background: url('shoe.svg');
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+	position: relative;
+	z-index: 1;
+}
+
+.Project7:hover {
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.7),
+			rgba(255, 255, 255, 0.7)
+	),
+	url('shoe.svg');
+	background-size: cover;
+	background-position: 0% 50%;
+    left: 0%;
+	z-index: 1;
+}
+
+.Project7:hover .P7text {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	align-self: center;
+	z-index: 2;
+}
+
+.P7text {
+	display: none;
+	text-align: center;
+	font-size: 1.4em;
+	margin-top: 20%;
+}
+
+.Project7:hover .Small {
 	display: inline-block;
 	width: 75%;
 	margin-bottom: 25%;
