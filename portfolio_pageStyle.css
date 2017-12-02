@@ -150,7 +150,10 @@ aside {
 }
 
 .ProjectsContainer div {
-    flex: 1;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 .ProjectsContainer div div {
 	flex-direction: row;
